@@ -31,10 +31,13 @@ namespace DS1
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.GestionDeRoles = new System.Windows.Forms.Label();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.SaveButton);
             this.groupBox1.Location = new System.Drawing.Point(30, 55);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(270, 161);
@@ -53,6 +56,15 @@ namespace DS1
             this.GestionDeRoles.Text = "Gestion de roles";
             this.GestionDeRoles.Click += new System.EventHandler(this.label1_Click);
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(84, 132);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.TabIndex = 0;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            // 
             // RoleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -62,6 +74,7 @@ namespace DS1
             this.Controls.Add(this.groupBox1);
             this.Name = "RoleForm";
             this.Text = "RoleForm";
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,5 +84,6 @@ namespace DS1
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label GestionDeRoles;
+        private System.Windows.Forms.Button SaveButton;
     }
 }
